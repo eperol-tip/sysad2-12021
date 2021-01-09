@@ -1,6 +1,6 @@
 ---
 - name: Installs in Ubuntu
-  hosts: centos
+  hosts: ubuntu
 
 
   roles:
@@ -12,7 +12,7 @@
 
       
 - name: Installs in Centos
-  hosts: ubuntu
+  hosts: centos
 
 
   roles:
