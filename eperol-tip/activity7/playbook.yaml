@@ -1,0 +1,22 @@
+---
+- name: Installs in Ubuntu
+  hosts: centos
+
+
+  roles:
+    - ubuntu/ELK
+    - ubuntu/Nagios
+    - ubuntu/Grafana
+    - ubuntu/Prometheus
+
+
+      
+- name: Installs in Centos
+  hosts: ubuntu
+
+
+  roles:
+    - centos/ELK
+    - centos/Nagios
+    - centos/Grafana
+    - centos/Prometheus
